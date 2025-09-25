@@ -7,7 +7,7 @@ function volume_sphere(e) {
 		volume.value = 'NaN';
 	}else{
 		let vol = ((4 / 3) * Math.PI * Math.pow(Number(radius), 3)).toFixed(4);
-		volume.value = vol;
+		volume.value = vol<=0?"":vol;
 	}
   
 } 
